@@ -1,0 +1,190 @@
+/* ## Layout */
+
+/* - Mobile: 23.4375rem
+- Desktop: 90rem */
+
+/* ## Typography
+- Font size (paragraph): .875rem */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 62.5%; */
+  /* ## Colors
+### Primary */
+
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  background-color: var(--cream);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: 14px;
+}
+h1 {
+  font-size: 32px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 1.25rem;
+  color: var(--very-dark-blue);
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.left {
+  width: 50%;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left img {
+  width: 100%;
+}
+.right {
+  width: 50%;
+  background-color: var(--white);
+  padding: 1.9375rem;
+}
+.right span {
+  font-size: 12px;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.description {
+  padding-top: 23px;
+  line-height: 1.6;
+  color: var(--dark-grayish-blue);
+}
+
+.price {
+  padding-top: 27px;
+  color: var(--dark-cyan);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0.0625rem;
+}
+
+.price span {
+  letter-spacing: 0rem;
+  color: var(--dark-grayish-blue);
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 25px;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--dark-cyan);
+  padding: 16px 60px 16px 90px;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  letter-spacing: 0.05rem;
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+}
+button:hover {
+  background-color: hsl(158, 49%, 17%);
+}
+svg {
+  top: 15px;
+  left: 65px;
+  position: absolute;
+}
+
+@media (min-width: 23.5rem) and (max-width: 37.5rem) {
+  html {
+    font-size: 70%;
+  }
+  button {
+    padding: 16px 48px 16px 64px;
+  }
+  svg {
+    top: 9.6px;
+    left: 33px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  main {
+    width: 92%;
+    display: block;
+
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+  .left {
+    background-image: url(./images/image-product-mobile.jpg);
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    height: 240px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-position: center;
+  }
+  img {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    padding: 20px 22.4px 20px 25px;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-top: 12px;
+  }
+  .description {
+    padding-top: 15px;
+    padding-right: 0rem;
+    letter-spacing: -0.0313rem;
+  }
+
+  button {
+    margin-top: 18px;
+    padding: 16px 0 16px 20.8px;
+    width: 100%;
+    margin-bottom: 0.3125rem;
+  }
+  svg {
+    top: 0.9375rem;
+    left: 5.75rem;
+    position: absolute;
+  }
+  .price {
+    padding-top: 45px;
+  }
+}
+@media (max-width: 21.875rem) {
+  svg {
+    top: 0.9375rem;
+    left: 2.75rem;
+  }
+}
