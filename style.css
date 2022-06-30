@@ -119,23 +119,9 @@ svg {
   position: absolute;
 }
 
-@media (min-width: 23.5rem) and (max-width: 37.5rem) {
-  html {
-    font-size: 70%;
-  }
-  button {
-    padding: 16px 48px 16px 64px;
-  }
-  svg {
-    top: 9.6px;
-    left: 33px;
-    position: absolute;
-  }
-}
-
-@media (max-width: 23.4375rem) {
+@media (max-width: 1020px) {
   main {
-    width: 92%;
+    width: 375px;
     display: block;
 
     border-radius: 0.625rem;
