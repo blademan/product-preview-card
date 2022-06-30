@@ -38,7 +38,7 @@ Start coding!
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/flex-box-custom-properties-css-variables-OggykXFXFd]
-- Live Site URL: [blademan.github.io/product-preview-card/]
+- Live Site URL: [https://blademan.github.io/product-preview-card/]
 
 ### Built with
 
