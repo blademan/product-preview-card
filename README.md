@@ -37,7 +37,7 @@ Start coding!
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/flex-box-custom-properties-css-variables-OggykXFXFd)
+- Solution URL: [https://www.frontendmentor.io/solutions/flex-box-custom-properties-css-variables-OggykXFXFd]
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
